@@ -4,7 +4,7 @@ class Santa < ApplicationRecord
   belongs_to :recipient, class_name: 'Santa', optional: true
   belongs_to :banned_recipient, class_name: 'Santa', optional: true
 
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: { case_sensitive: false }
   validates :permalink, presence: true
   validates :recipient_id, uniqueness: true, allow_nil: true
 
