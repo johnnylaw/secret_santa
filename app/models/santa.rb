@@ -13,7 +13,7 @@ class Santa < ApplicationRecord
   end
 
   def self.reset!
-    update_all!(recipient_id: nil)
+    update_all(recipient_id: nil)
   end
 
   def self.scramble!
