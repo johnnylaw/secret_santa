@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  font-family: 'Arial', sans-serif;
 ">
   <p
     id="welcome"
@@ -15,7 +16,7 @@
     Please get a gift for
     <span
       id="giftee"
-      style="filter: blur(8px); margin-left: 8px;"
+      style="filter: blur(8px);"
     >
       someone special
     </span>
@@ -41,12 +42,28 @@
     </button>
   </p>
 
-  <p
+  <div
     id="gift-value"
-    style="font-size: 20px; opacity: 0; transition: opacity 1s; margin: 0"
+    style="
+      display: flex; flex-direction: column; align-items: center;
+      font-size: 20px; opacity: 0; transition: opacity 1s; margin: 0
+    "
   >
-    Let's keep the gifts around but no more than $200 in value.
-  </p>
+    <p
+      style="font-size: 112%;"
+    >
+      Let's keep the gifts no more than $200 in value.
+    </p>
+
+    <p
+      style="text-align: center; max-width: 600px; margin: 0 auto;"
+    >
+      <a
+        href="https://docs.google.com/spreadsheets/d/1Gn1Gq3yNOu-3pj_Sp2EyHaFO66o2788J1pSe3G3nDcU/edit?usp=sharing"
+      >Click here</a> to add comments for your Santa (and/or to see what your giftee has said to you). If you're feeling adventurous, you don't have to add anything there,
+      and your Santa will probably get you something great, but if you do want your Santa to know something, add comments there soon!!!
+    </p>
+  </div>
 
   <script>
     window.revealGiftee = () =>{
