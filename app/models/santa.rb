@@ -8,6 +8,10 @@ class Santa < ApplicationRecord
   validates :permalink, presence: true
   validates :recipient_id, uniqueness: true, allow_nil: true
 
+  def to_param
+    permalink
+  end
+
   def ensure_santa_has_permalink
     self.permalink ||= SecureRandom.uuid
   end

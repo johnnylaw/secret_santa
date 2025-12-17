@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get ':permalink', to: 'santas#show'
+  post ':permalink', to: 'santas#update'
 end
