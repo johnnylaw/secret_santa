@@ -33,3 +33,4 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+data_dump-2025.json
